@@ -191,3 +191,34 @@ $
 # Bundle 2
 
 ## Exercise 1
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout -b ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/bundle-2)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/bundle-2)
+$ git commit -m 'service pages'
+[ft/bundle-2 76a35b0] service pages
+1 file changed, 11 insertions(+)
+t/bundle-2)
+
+$ git push -u origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 447 bytes | 15.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/bundle-2 -> ft/bundle-2
+  branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+## Exercise 2
