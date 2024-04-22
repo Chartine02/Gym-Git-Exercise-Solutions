@@ -289,3 +289,193 @@ Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
 9ad4fb9..36b4384 ft/service-redesign -> ft/service-redesign
+
+# Bundle 3
+
+## Exercise 1
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git branch ft/team-page
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git commit -m 'ft-team page'
+[ft/team-page 46c620f] ft-team page
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/team-page -> ft/team-page
+  branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git branch ft/contact-page
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git log
+commit 46c620f1e059de576bdc6c23dbe58f109666d935 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: chartine02 <noellachartine125@gmail.com>
+Date: Mon Apr 22 19:36:36 2024 +0200
+
+    ft-team page
+
+commit 22434195fc37fc788523bc2f5bf0a601e0efb784 (origin/main, main, ft/contact-page)
+Author: chartine02 <noellachartine125@gmail.com>
+Date: Mon Apr 22 19:31:40 2024 +0200
+
+    updated readme
+
+commit 9d5b5105defc9eff8694aed77d561d0aae7f39e3
+Author: chartine02 <noellachartine125@gmail.com>
+Date: Mon Apr 22 17:31:53 2024 +0200
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick 46c620f1e059de576bdc6c23dbe58f109666d935
+[ft/contact-page 4ab471a] ft-team page
+Date: Mon Apr 22 19:36:36 2024 +0200
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git addv.
+git: 'addv.' is not a git command. See 'git --help'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git commit -m ' ft-contact page '
+[ft/contact-page 13e30f3] ft-contact page
+1 file changed, 11 insertions(+)
+create mode 100644 contact.html
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 752 bytes | 107.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/contact-page -> ft/contact-page
+  branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m 'ft-faq page'
+[ft/faq-page aada8d9] ft-faq page
+1 file changed, 11 insertions(+)
+create mode 100644 faq.html
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Revert "ft-team page"
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 426 bytes | 71.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/faq-page -> ft/faq-page
+  branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git revert 46c620f1e059de576bdc6c23dbe58f109666d935
+[ft/faq-page 08391ce] Revert "ft-team page"
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 173.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+aada8d9..08391ce ft/faq-page -> ft/faq-page
