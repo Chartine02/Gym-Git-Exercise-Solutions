@@ -479,3 +479,42 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
 aada8d9..08391ce ft/faq-page -> ft/faq-page
+
+## Exercises 2
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/faq-page)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m 'ft-redesigned home'
+[ft/home-page-redesign 03116f5] ft-redesigned home
+1 file changed, 6 insertions(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.18 KiB | 191.00 KiB/s, done.
+Total 17 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/home-page-redesign -> ft/home-page-redesign
+  branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
