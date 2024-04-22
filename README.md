@@ -681,3 +681,142 @@ To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
 
 - [new branch] ft/squashing -> ft/squashing
   branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+# Bundle 5
+
+## Exercise 1
+
+Deployment from github pages : https://chartine02.github.io/Gym-Git-Exercise-Solutions/
+
+## Exercise 2
+
+PS C:\Users\Think\Desktop\HelloWorld!\Git-Solutions> git clone https://github.com/Chartine02/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93Receiving objects: 97% (104/107), 476.00 KiB | 936.00 KiRec
+Receiving objects: 100% (107/107), 1.95 MiB | 2.38 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git commit -m 'Updat title'
+[main 6f206d3] Updat title
+1 file changed, 399 insertions(+), 239 deletions(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.55 KiB | 527.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Chartine02/git-cafe-exercise.git
+d1d3f9c..6f206d3 main -> main
+
+# Bundle 6
+
+## Exercise 1
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git checkout -b ft-menu
+Switched to a new branch 'ft-menu'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-menu)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-menu)
+$ git commit -m 'Added menu page'
+[ft-menu 23ad491] Added menu page
+1 file changed, 11 insertions(+)
+create mode 100644 menu.html
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-menu)
+$ git push --set-upstream origin ft-menu
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 436 bytes | 145.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft-menu' on GitHub by visiting:
+remote: https://github.com/Chartine02/git-cafe-exercise/pull/new/ft-menu
+remote:
+To https://github.com/Chartine02/git-cafe-exercise.git
+
+- [new branch] ft-menu -> ft-menu
+  branch 'ft-menu' set up to track 'origin/ft-menu'.
+
+## Exercises 2
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git checkout -b ft-fix-bug
+Switched to a new branch 'ft-fix-bug'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (main)
+$ git checkout -b ft-fix-bug
+Switched to a new branch 'ft-fix-bug'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-fix-bug)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-fix-bug)
+$ git commit -m 'Updated title'
+[ft-fix-bug 3d58966] Updated title
+1 file changed, 232 insertions(+), 164 deletions(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-fix-bug)
+$ git push --set-upstream origin ft-fix-bug
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.40 KiB | 479.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft-fix-bug' on GitHub by visiting:
+remote: https://github.com/Chartine02/git-cafe-exercise/pull/new/ft-fix-bug
+remote:
+To https://github.com/Chartine02/git-cafe-exercise.git
+
+- [new branch] ft-fix-bug -> ft-fix-bug
+  branch 'ft-fix-bug' set up to track 'origin/ft-fix-bug'.
+
+## Exercise 3
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-fix-bug)
+$ git checkout -b ft-hotfix
+Switched to a new branch 'ft-hotfix'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-hotfix)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-hotfix)
+$ git commit -m 'Update phone number'
+[ft-hotfix 81e32cb] Update phone number
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Solutions/git-cafe-exercise (ft-hotfix)
+$ git push origin ft-hotfix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 298 bytes | 149.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft-hotfix' on GitHub by visiting:
+remote: https://github.com/Chartine02/git-cafe-exercise/pull/new/ft-hotfix
+remote:
+To https://github.com/Chartine02/git-cafe-exercise.git
+
+- [new branch] ft-hotfix -> ft-hotfix
