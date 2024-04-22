@@ -222,3 +222,70 @@ To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
   branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 ## Exercise 2
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+(use "git push" to publish your local commits)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+(use "git push" to publish your local commits)
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified: README.md
+modified: services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1008 bytes | 144.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+90c4321..9d5b510 main -> main
+branch 'main' set up to track 'origin/main'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Merge branch 'main' into ft/service-redesign
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/service-redesign|MERGING)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/service-redesign|MERGING)
+$ git commit
+[ft/service-redesign 36b4384] Merge branch 'main' into ft/service-redesign
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/service-redesign)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 272 bytes | 90.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+9ad4fb9..36b4384 ft/service-redesign -> ft/service-redesign
