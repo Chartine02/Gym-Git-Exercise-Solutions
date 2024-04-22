@@ -518,3 +518,166 @@ To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
 
 - [new branch] ft/home-page-redesign -> ft/home-page-redesign
   branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+# Bundle 4
+
+## Exercise 1
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+(use "git push" to publish your local commits)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git commit -m 'updated readme '
+[main 760ed2c] updated readme
+1 file changed, 39 insertions(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/Chartine02/Gym-Git-Solutions.git
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git commit -m 'updated home page'
+[main d701354] updated home page
+1 file changed, 1 insertion(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.24 KiB | 127.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+193ba21..55fac4c main -> main
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git push git-copy main
+Enumerating objects: 54, done.
+Counting objects: 100% (54/54), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (54/54), 10.24 KiB | 361.00 KiB/s, done.
+Total 54 (delta 26), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/Chartine02/Gym-Git-Solutions.git
+
+- [new branch] main -> main
+
+## Exercises 2
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git commit -m 'ft-footer'
+[ft/footer 2786bdf] ft-footer
+1 file changed, 1 insertion(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git commit -m 'ft-updated foot'
+[ft/footer 1617395] ft-updated foot
+1 file changed, 1 insertion(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 654 bytes | 65.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/footer -> ft/footer
+  branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 55fac4c..1617395
+Fast-forward
+Squash commit -- not updating HEAD
+about.html | 1 +
+home.html | 1 +
+2 files changed, 2 insertions(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: about.html
+modified: home.html
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+add
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git add .
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git commit -m 'footer changes squashing'
+[ft/squashing 904189c] footer changes squashing
+2 files changed, 2 insertions(+)
+
+Think@DESKTOP-96IITAO MINGW64 ~/Desktop/HelloWorld!/Git-Exercise-Solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 464 bytes | 58.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote: https://github.com/Chartine02/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/Chartine02/Gym-Git-Exercise-Solutions.git
+
+- [new branch] ft/squashing -> ft/squashing
+  branch 'ft/squashing' set up to track 'origin/ft/squashing'.
